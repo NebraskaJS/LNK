@@ -1,0 +1,39 @@
+{
+  "name": "nejelnk-example",
+  "version": "1.0.0",
+  "description": "Webpack NEJS Example",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "export NODE_ENV=production && node node_modules/.bin/webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheLarkInn/LNK.git"
+  },
+  "keywords": [
+    "foo",
+    "bar"
+  ],
+  "author": "Nebraksa JS Lincoln",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TheLarkInn/LNK/issues"
+  },
+  "homepage": "https://github.com/TheLarkInn/LNK#readme",
+  "dependencies": {
+    "angular": "^1.4.8"
+  },
+  "devDependencies": {
+    "angular": "^1.4.8",
+    "babel": "^6.1.18",
+    "babel-core": "^6.2.1",
+    "babel-loader": "^6.2.0",
+    "babel-plugin-syntax-class-properties": "^6.1.18",
+    "babel-plugin-transform-do-expressions": "^6.1.18",
+    "babel-plugin-transform-function-bind": "^6.1.18",
+    "babel-preset-es2015": "^6.1.18",
+    "babel-preset-stage-0": "^6.1.18",
+    "html-loader": "^0.4.0",
+    "webpack": "^1.12.9"
+  }
+}
