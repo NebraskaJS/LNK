@@ -4,7 +4,7 @@
   "description": "Webpack NEJS Example",
   "main": "dist/index.js",
   "scripts": {
-    "build": "SET NODE_ENV=production && node node_modules/.bin/webpack"
+    "build": "export NODE_ENV=production && node node_modules/.bin/webpack"
   },
   "repository": {
     "type": "git",

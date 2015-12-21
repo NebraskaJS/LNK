@@ -25,8 +25,7 @@ var config = {
         query: {
           presets: ['es2015', 'stage-0']
         }       
-      },
-      {test: /\.html/, exclude: /(node_modules)/, loader: 'html-loader'},
+      }
     ]
   }
 }
@@ -34,13 +33,13 @@ var config = {
 switch (nodeEnvironment) {
   case 'production':
     config.output.path = __dirname + '/dist';
-    // config.plugins.push(new webpack.optimize.UglifyJsPlugin());
-    // config.plugins.push(new webpack.optimize.DedupePlugin());
-    // config.plugins.push(new webpack.optimize.OccurenceOrderPlugin());
+    config.plugins.push(new webpack.optimize.UglifyJsPlugin());
+    config.plugins.push(new webpack.optimize.DedupePlugin());
+    config.plugins.push(new webpack.optimize.OccurenceOrderPlugin());
     
     config.output.filename = 'index.js';
     config.entry ='./index.js';
-    config.devtool = 'source-map';
+    // config.devtool = 'source-map';
     break;
     
   default: 
